@@ -1,2 +1,2 @@
 # Resume-maker
-[Find it on](surajitch-resumemaker.herokuapp.com)
+[Find it on](https://surajitch-resumemaker.herokuapp.com/)
