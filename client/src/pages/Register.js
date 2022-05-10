@@ -27,7 +27,6 @@ function Register() {
 
   return (
     <div className="auth-parent">
-      <h1 className="brand">Shey CV</h1>
       {loading && <Spin size="large" />}
       <Form layout="vertical" onFinish={onFinish}>
         <h1>Register</h1>
