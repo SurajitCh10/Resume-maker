@@ -1,12 +1,13 @@
-import React from "react";
-import { Form, Input, Button, Space } from "antd";
-import { MinusCircleOutlined, PlusOutlined } from "@ant-design/icons";
-const { TextArea } = Input;
+import React from 'react'
+import { Form, Input, Button, Space } from 'antd'
+import { MinusCircleOutlined, PlusOutlined } from '@ant-design/icons'
+const { TextArea } = Input
 function ExperienceProjects() {
   return (
     <div>
-
-      <h5><b>Experience</b></h5>
+      <h5>
+        <b>Experience</b>
+      </h5>
       <hr />
       <Form.List name="experience">
         {(fields, { add, remove }) => (
@@ -17,9 +18,9 @@ function ExperienceProjects() {
                   <div className="col-md-3">
                     <Form.Item
                       {...restField}
-                      name={[name, "company"]}
+                      name={[name, 'company']}
                       rules={[
-                        { required: true, message: "Missing first name" },
+                        { required: true, message: 'Missing first name' },
                       ]}
                     >
                       <Input placeholder="Company" />
@@ -29,9 +30,9 @@ function ExperienceProjects() {
                   <div className="col-md-2">
                     <Form.Item
                       {...restField}
-                      name={[name, "years"]}
+                      name={[name, 'years']}
                       rules={[
-                        { required: true, message: "Missing first name" },
+                        { required: true, message: 'Missing first name' },
                       ]}
                     >
                       <Input placeholder="Years" />
@@ -41,9 +42,9 @@ function ExperienceProjects() {
                   <div className="col-md-3">
                     <Form.Item
                       {...restField}
-                      name={[name, "place"]}
+                      name={[name, 'place']}
                       rules={[
-                        { required: true, message: "Missing first name" },
+                        { required: true, message: 'Missing first name' },
                       ]}
                     >
                       <Input placeholder="Place" />
@@ -52,9 +53,9 @@ function ExperienceProjects() {
                   <div className="col-md-2">
                     <Form.Item
                       {...restField}
-                      name={[name, "range"]}
+                      name={[name, 'range']}
                       rules={[
-                        { required: true, message: "Missing first name" },
+                        { required: true, message: 'Missing first name' },
                       ]}
                     >
                       <Input placeholder="Year Range" />
@@ -62,7 +63,7 @@ function ExperienceProjects() {
                   </div>
                   <div className="col-md-2">
                     <MinusCircleOutlined
-                      style={{ fontSize: 25, color: "tomato" }}
+                      style={{ fontSize: 25, color: 'tomato' }}
                       onClick={() => remove(name)}
                     />
                   </div>
@@ -84,7 +85,9 @@ function ExperienceProjects() {
         )}
       </Form.List>
 
-      <h5><b>Projects</b></h5>
+      <h5>
+        <b>Projects</b>
+      </h5>
       <hr />
       <Form.List name="projects">
         {(fields, { add, remove }) => (
@@ -95,10 +98,8 @@ function ExperienceProjects() {
                   <div className="col-md-4">
                     <Form.Item
                       {...restField}
-                      name={[name, "title"]}
-                      rules={[
-                        { required: true, message: "Missing first name" },
-                      ]}
+                      name={[name, 'title']}
+                      rules={[{ required: true, message: 'Missing Title' }]}
                     >
                       <Input placeholder="Title" />
                     </Form.Item>
@@ -107,10 +108,8 @@ function ExperienceProjects() {
                   <div className="col-md-4">
                     <Form.Item
                       {...restField}
-                      name={[name, "rating"]}
-                      rules={[
-                        { required: true, message: "Missing first name" },
-                      ]}
+                      name={[name, 'rating']}
+                      rules={[{ required: true, message: 'Missing rating' }]}
                     >
                       <TextArea placeholder="Description" />
                     </Form.Item>
@@ -118,9 +117,9 @@ function ExperienceProjects() {
                   <div className="col-md-2">
                     <Form.Item
                       {...restField}
-                      name={[name, "range"]}
+                      name={[name, 'range']}
                       rules={[
-                        { required: true, message: "Missing first name" },
+                        { required: true, message: 'Missing year range' },
                       ]}
                     >
                       <Input placeholder="Year Range" />
@@ -129,7 +128,7 @@ function ExperienceProjects() {
 
                   <div className="col-md-2">
                     <MinusCircleOutlined
-                      style={{ fontSize: 25, color: "tomato" }}
+                      style={{ fontSize: 25, color: 'tomato' }}
                       onClick={() => remove(name)}
                     />
                   </div>
@@ -151,7 +150,7 @@ function ExperienceProjects() {
         )}
       </Form.List>
     </div>
-  );
+  )
 }
 
-export default ExperienceProjects;
+export default ExperienceProjects
