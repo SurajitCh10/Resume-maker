@@ -19,9 +19,7 @@ function ExperienceProjects() {
                     <Form.Item
                       {...restField}
                       name={[name, 'company']}
-                      rules={[
-                        { required: true, message: 'Missing first name' },
-                      ]}
+                      rules={[{ required: true, message: 'Missing company' }]}
                     >
                       <Input placeholder="Company" />
                     </Form.Item>
@@ -31,9 +29,7 @@ function ExperienceProjects() {
                     <Form.Item
                       {...restField}
                       name={[name, 'years']}
-                      rules={[
-                        { required: true, message: 'Missing first name' },
-                      ]}
+                      rules={[{ required: true, message: 'Missing years' }]}
                     >
                       <Input placeholder="Years" />
                     </Form.Item>
@@ -43,9 +39,7 @@ function ExperienceProjects() {
                     <Form.Item
                       {...restField}
                       name={[name, 'place']}
-                      rules={[
-                        { required: true, message: 'Missing first name' },
-                      ]}
+                      rules={[{ required: true, message: 'Missing place' }]}
                     >
                       <Input placeholder="Place" />
                     </Form.Item>
@@ -55,7 +49,7 @@ function ExperienceProjects() {
                       {...restField}
                       name={[name, 'range']}
                       rules={[
-                        { required: true, message: 'Missing first name' },
+                        { required: true, message: 'Missing year range' },
                       ]}
                     >
                       <Input placeholder="Year Range" />
@@ -109,7 +103,9 @@ function ExperienceProjects() {
                     <Form.Item
                       {...restField}
                       name={[name, 'rating']}
-                      rules={[{ required: true, message: 'Missing rating' }]}
+                      rules={[
+                        { required: true, message: 'Missing description' },
+                      ]}
                     >
                       <TextArea placeholder="Description" />
                     </Form.Item>

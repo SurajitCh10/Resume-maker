@@ -98,7 +98,7 @@ function SkillsEducation() {
                       {...restField}
                       name={[name, 'technology']}
                       rules={[
-                        { required: true, message: 'Missing first name' },
+                        { required: true, message: 'Missing technology' },
                       ]}
                     >
                       <Input placeholder="Technology" />
@@ -109,9 +109,7 @@ function SkillsEducation() {
                     <Form.Item
                       {...restField}
                       name={[name, 'rating']}
-                      rules={[
-                        { required: true, message: 'Missing first name' },
-                      ]}
+                      rules={[{ required: true, message: 'Missing rating' }]}
                     >
                       <Input placeholder="Rating" />
                     </Form.Item>
