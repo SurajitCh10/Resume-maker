@@ -12,7 +12,8 @@ function Register() {
     try {
       await axios.post('api/user/register', values)
       setLoading(false)
-      message.success('Registration successfull')
+      message.success('Registration successful')
+      navigate('/login')
     } catch (error) {
       setLoading(false)
       message.error('Registration failed')

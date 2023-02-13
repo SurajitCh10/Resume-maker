@@ -10,7 +10,7 @@ function Register() {
     setLoading(true)
     try {
       const user = await axios.post('api/user/login', values)
-      message.success('Login successfull')
+      message.success('Login successful')
       localStorage.setItem('resume-user', JSON.stringify(user.data))
       setLoading(false)
       navigate('/home')
